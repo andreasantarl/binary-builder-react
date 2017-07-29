@@ -24,9 +24,24 @@ class App extends React.Component {
       });
     }
 
+    // handleClick(i) {
+    //   const isActive = this.props.active ? 1 : 0;
+    //   this.setState({
+    //     state: {
+    //       board: {
+    //         chiclets: {
+    //           active: isActive,
+    //         }
+    //       }
+    //     }
+    //   })
+    // }
+
     render() {
       return (
-         <Board board={this.state.board} />
+         <Board board={this.state.board}
+        //  onClick={i => this.handleClick(i)}
+         />
       )
     }
 }
